@@ -1,0 +1,15 @@
+query GetCountries {
+  countries {
+    code
+    name
+    emoji
+    capital
+  }
+}
+
+query GetCountries($code: string) {
+  countries(code: $code) {
+    states
+    nameprovi
+  }
+}
