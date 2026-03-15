@@ -10,7 +10,7 @@ interface NavbarProps {
 
 function Navbar({ searchBarData }: NavbarProps) {
   return (
-    <nav className="w-screen shadow-2xl flex justify-between items-center h-[5vh] px-12 z-9999">
+    <nav className="w-screen shadow-2xl flex justify-between items-center h-[5vh] px-2 sm:px-12 z-9999">
       <a href="/" className="text-xl">
         Countries
       </a>
@@ -22,7 +22,7 @@ function Navbar({ searchBarData }: NavbarProps) {
         action={(country) => redirect(`/country/${country.code}`)}
         resetAfterAction
       />
-      <span className="flex gap-1 text-sm">
+      <span className="md:flex gap-1 text-sm hidden">
         Made by
         <a
           href="https://github.com/lukas-dvorsky/countries-api"
