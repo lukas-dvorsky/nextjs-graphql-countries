@@ -18,7 +18,7 @@ function GameSelectionSection<T, K extends keyof T>({
   return (
     <div className="flex flex-col gap-16">
       <span className="text-center text-3xl font-bold">{secitonTitle}</span>
-      <div className="flex gap-8">
+      <div className="flex-col flex gap-8 lg:flex-row">
         {data.map((item, index) => {
           const bestTime = localStorage.getItem(String(item[codeKey]));
 
