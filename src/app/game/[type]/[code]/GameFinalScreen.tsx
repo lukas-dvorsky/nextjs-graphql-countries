@@ -1,18 +1,22 @@
 interface GameFinalScreenProps {
   answers: { right: number; wrong: number };
   hideRightAnswers?: boolean;
+  time: string;
   resetGame: () => void;
 }
 
 function GameFinalScreen({
   answers,
   hideRightAnswers,
+  time,
   resetGame,
 }: GameFinalScreenProps) {
+  console.log(time);
   return (
     <div className="flex flex-col items-center gap-8">
       <p className="text-4xl">Congratulations!</p>
       <span>You did it!</span>
+      <p>{time}</p>
       <div className="flex flex-col">
         {!hideRightAnswers && (
           <p>

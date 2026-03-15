@@ -22,7 +22,7 @@ async function GamePage({ params }: GamePageProps) {
   return (
     <main className="w-screen h-screen flex justify-center items-center">
       <GameWrapper
-        dataset={data.continent.countries}
+        dataset={data.continent.countries.splice(0, 5)}
         countryCode="code"
         optionKey="name"
         removeOnWrongAnswer={true}

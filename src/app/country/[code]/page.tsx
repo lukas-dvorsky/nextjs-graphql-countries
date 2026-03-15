@@ -7,6 +7,7 @@ import {
 import { client } from "@/lib/graphql/client";
 import CountryData from "./CountryData";
 import Map from "@/components/UI/Map";
+import ErrorPage from "@/components/UI/ErrorPage";
 
 interface CountryPageProps {
   params: Promise<{ code: string }>;
@@ -30,6 +31,10 @@ async function CountryPage({ params }: CountryPageProps) {
   );
 
   const data = await response.json();
+
+  if (!country) {
+    return <ErrorPage code={404} message="Page not found"></ErrorPage>;
+  }
 
   return (
     <main className="flex">
