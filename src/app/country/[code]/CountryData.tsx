@@ -24,30 +24,13 @@ function CountryData({ country, code }: CountryDataProps) {
       </span>
 
       <Separator />
-
-      <div>
-        <NameValuePair name="Capital" value={country?.capital} />
-      </div>
-
+      <NameValuePair name="Capital" value={country?.capital} />
       <Separator />
       <NameValuePair name="Currencies" value={country?.currencies.join(", ")} />
-
       <Separator />
-
-      <div>
-        <NameValuePair name="Continent" value={country?.continent.name} />
-      </div>
-
+      <NameValuePair name="Continent" value={country?.continent.name} />
       <Separator />
-
-      <div>
-        <NameValuePair
-          name="Phone numbers"
-          value={country?.phones.join(", ")}
-        />
-      </div>
-
-      <Separator />
+      <NameValuePair name="Phone numbers" value={country?.phones.join(", ")} />
 
       <div className="flex flex-col gap-4">
         <span className="font-bold text-xl text-center ">Languages</span>

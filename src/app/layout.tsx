@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
 import { client } from "@/lib/graphql/client";
 import { GetCountriesDocument, GetCountriesQuery } from "@/gql/graphql";
 import Navbar from "@/components/UI/Navbar";
