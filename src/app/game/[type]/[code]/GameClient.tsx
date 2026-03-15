@@ -58,6 +58,7 @@ function GameClient<T, K extends keyof T>({
             />
             <CheckBox
               label="Remove question from question pool on wrong answer. "
+              initValue={true}
               onCheck={(val) => {
                 setGameOptions((prev) => ({
                   ...prev,
