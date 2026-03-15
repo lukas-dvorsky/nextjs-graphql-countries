@@ -10,7 +10,7 @@ interface NavbarProps {
 
 function Navbar({ searchBarData }: NavbarProps) {
   return (
-    <nav className="w-screen shadow-2xl flex justify-center items-center h-12 z-10">
+    <nav className="w-screen shadow-2xl flex justify-center items-center h-[5vh] z-9999">
       <SearchBar
         className="w-86"
         data={searchBarData.countries}

@@ -11,7 +11,7 @@ function Map({ lat, lng }: MapProps) {
   const position: [number, number] = [lat, lng];
 
   return (
-    <MapContainer center={position} zoom={13} className="h-screen w-full">
+    <MapContainer center={position} zoom={7} className="h-[95vh] w-full z-10">
       <TileLayer
         attribution={`&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors`}
         url={`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`}

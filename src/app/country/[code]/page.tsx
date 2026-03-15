@@ -20,8 +20,6 @@ async function CountryPage({ params }: CountryPageProps) {
   >(GetCountryByCodeDocument, { code });
 
   const country = countryData.country;
-  console.log(country);
-
   const response = await fetch(
     `https://nominatim.openstreetmap.org/search?q=${countryData.country?.capital}&format=json`,
     {
@@ -32,7 +30,6 @@ async function CountryPage({ params }: CountryPageProps) {
   );
 
   const data = await response.json();
-  console.log(data);
 
   return (
     <main className="flex">
