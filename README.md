@@ -1,5 +1,7 @@
 ## TL;DR
 
+I created this app to learn basics of GraphQL and refresh my memory with Next.JS.
+
 Next.js application that shows data about countries. App also includes mini-game where user guesses countries by their flags on selected continent.
 
 ## Application
@@ -23,8 +25,6 @@ npm run dev
 ```
 
 ## App Description
-
-I created this app to learn basics of GraphQL and refresh my memory with Next.JS.
 
 App includes navbar with basic navigation and generic SearchBar component for searching various countries.  
 This component takes any dataset, you just specify keys by which the data are filtered and displayed in the results.  
