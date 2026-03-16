@@ -39,7 +39,7 @@ function GameSelectionSection<T, K extends keyof T>({
           return (
             <GameRedirectButton
               key={key + index}
-              title={key}
+              title={String(item[titleKey])}
               url={`game/flags/${key}`}
               bestTime={bestTimes ? bestTimes[key] : null}
             />
