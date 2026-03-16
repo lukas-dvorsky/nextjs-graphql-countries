@@ -10,6 +10,19 @@ Application is available [HERE](https://nextjs-graphql-countries.vercel.app/)
 
 If you want to run application locally run these steps:
 
+### Used libraries
+
+- GraphQL
+- Leaflet
+- Next.js
+- React
+- TailwindCSS
+
+### Used API's and sources
+
+- https://countries.trevorblades.com/ - Data about countries
+- https://flagcdn.com/ - SVG flags
+
 ### Prerequsities
 
 - NodeJS: version 24+
